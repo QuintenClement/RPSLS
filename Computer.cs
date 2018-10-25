@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheRealRPSLS
 {
-    class Program
+    class Computer
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
