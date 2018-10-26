@@ -12,12 +12,10 @@ namespace TheRealRPSLS
         public Player playerOne;
         public Player playerTwo;
         public string playAgain;
-
         public Game()
         {
             playerOne = new Human();
         }
-
         public void StartGame()
         {
             // display instructions
@@ -31,15 +29,10 @@ namespace TheRealRPSLS
             Console.WriteLine("The game is best 4 out of 7. Just like a true Championship!!!");
             Console.ReadLine();
             Console.WriteLine("Got it?");
+
             Console.ReadLine();
             Console.WriteLine("Good!");
             Console.ReadLine();
-
-            ///////////////////////////////////////
-
-
-            // ask what type of game
-           
         }
         public void RunGame()
         {
@@ -51,20 +44,14 @@ namespace TheRealRPSLS
                 playerTwo.ChooseGesture();
                 WhoWins();
                 Console.ReadLine();
-
-
-
                 Console.WriteLine("Player 1 score: ");
                 playerOne.DisplayUserScore();
                 Console.WriteLine("Player 2 score: ");
                 playerTwo.DisplayUserScore();
                 Console.ReadLine();
             }
-           
             PlayAgain();
-
         }
-
         public void SelectGameType()
         {
             Console.WriteLine("Would you like to play against another person or against a computer? (person or computer)");
@@ -88,8 +75,6 @@ namespace TheRealRPSLS
 
         public void WhoWins()
         {
-
-
             if (playerOne.gesture == "rock" && (playerTwo.gesture == "paper" || playerTwo.gesture == "spock"))
             {
                 playerTwo.score++;
@@ -125,26 +110,31 @@ namespace TheRealRPSLS
                 playerOne.score++;
                 Console.WriteLine("Player 1 won! Better luck next time Player 2");
             }
+
             else if (playerOne.gesture == "lizard" && (playerTwo.gesture == "paper" || playerTwo.gesture == "spock"))
             {
                 playerOne.score++;
                 Console.WriteLine("Player 1 won! Better luck next time Player 2");
             }
+
             else if (playerOne.gesture == "scissors" && (playerTwo.gesture == "paper" || playerTwo.gesture == "lizard"))
             {
                 playerOne.score++;
                 Console.WriteLine("Player 1 won! Better luck next time Player 2");
             }
+
             else if (playerOne.gesture == "paper" && (playerTwo.gesture == "rock" || playerTwo.gesture == "spock"))
             {
                 playerOne.score++;
                 Console.WriteLine("Player 1 won! Better luck next time Player 2");
             }
+
             else if (playerOne.gesture == "rock" && (playerTwo.gesture == "scissors" || playerTwo.gesture == "lizard"))
             {
                 playerOne.score++;
                 Console.WriteLine("Player 1 won! Better luck next time Player 2");
             }
+
             else if (playerOne.gesture == playerTwo.gesture)
             {
                 Console.WriteLine("You have tied! Nobody scores!");
@@ -167,7 +157,7 @@ namespace TheRealRPSLS
             playAgain = Console.ReadLine();
             if (playAgain.Equals("yes") || playAgain.Equals("Yes"))
             {
-                StartGame();
+                RunGame();
             }
             else if (playAgain.Equals("no") || playAgain.Equals("No")) {
                 Console.WriteLine("It was fun playing with you! Play again soon!");
