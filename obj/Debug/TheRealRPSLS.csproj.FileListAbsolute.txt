@@ -1,0 +1,7 @@
+D:\devCodeCamp\real rpsls\TheRealRPSLS\TheRealRPSLS\bin\Debug\TheRealRPSLS.exe.config
+D:\devCodeCamp\real rpsls\TheRealRPSLS\TheRealRPSLS\bin\Debug\TheRealRPSLS.exe
+D:\devCodeCamp\real rpsls\TheRealRPSLS\TheRealRPSLS\bin\Debug\TheRealRPSLS.pdb
+D:\devCodeCamp\real rpsls\TheRealRPSLS\TheRealRPSLS\obj\Debug\TheRealRPSLS.csprojAssemblyReference.cache
+D:\devCodeCamp\real rpsls\TheRealRPSLS\TheRealRPSLS\obj\Debug\TheRealRPSLS.csproj.CoreCompileInputs.cache
+D:\devCodeCamp\real rpsls\TheRealRPSLS\TheRealRPSLS\obj\Debug\TheRealRPSLS.exe
+D:\devCodeCamp\real rpsls\TheRealRPSLS\TheRealRPSLS\obj\Debug\TheRealRPSLS.pdb
